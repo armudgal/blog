@@ -1,0 +1,10 @@
+# LLM Stuff
+.claude/*
+
+# Envs
+venv/*
+
+# Random
+blog
+
+

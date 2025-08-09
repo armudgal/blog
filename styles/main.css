@@ -1,0 +1,115 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header ul {
+    list-style: none;   /* remove dots */
+    margin: 0;
+    padding: 0;
+    display: flex;   
+    gap: 1rem;
+}
+
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Container */
+.container {
+    width: 100%;
+}
+
+/* Header and Navigation */
+header {
+    margin-bottom: 3rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Archive section */
+.archive {
+    margin-bottom: 2rem;
+}
+
+.archive h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Posts */
+.posts {
+    margin-left: 0;
+}
+
+.post-entry {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.post-entry time {
+    color: #666;
+    font-size: 0.9rem;
+    width: 3rem;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.post-entry a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.post-entry a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+    
+    nav {
+        gap: 1rem;
+    }
+    
+    .post-entry {
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .post-entry time {
+        width: auto;
+        font-size: 0.8rem;
+    }
+} 
